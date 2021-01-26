@@ -48,7 +48,7 @@ jobs:
           #git config --global user.email $user.email; git config --global user.name $user.name; git config pull.rebase false; git add .; git commit -m $"message"; git push -u origin $branch
           
           #Uncomment the line below to generate a change log.
-          #./liquibase/liquibase --defaultsFile=./H2_project/liquibase.properties --changeLogFile=./H2_project/newChangeLog.h2.sql generateChangeLog
+          ./liquibase/liquibase --defaultsFile=./H2_project/liquibase.properties --changeLogFile=./H2_project/newChangeLog.h2.sql generateChangeLog
           
           #Uncomment the line below to run the rollbackCount 3 times
           #./liquibase/liquibase --defaultsFile=./H2_project/liquibase.properties rollbackCount 3
